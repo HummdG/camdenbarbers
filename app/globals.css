@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(90deg, #d4a017, #e8c060);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .pause-on-hover:hover {
+    animation-play-state: paused;
+  }
+}
+
+@layer base {
+  *:focus-visible {
+    outline: 2px solid #d4a017;
+    outline-offset: 2px;
+  }
+
+  body {
+    @apply bg-navy-900 text-cream-50 font-sans antialiased;
+  }
+}

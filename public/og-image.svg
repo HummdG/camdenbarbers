@@ -1,0 +1,25 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d1224"/>
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#d4a017" stroke-width="0.3" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <!-- Gold accent glow -->
+  <ellipse cx="900" cy="200" rx="300" ry="200" fill="#d4a017" opacity="0.06"/>
+  <!-- Gold line -->
+  <rect x="100" y="260" width="60" height="2" fill="#d4a017"/>
+  <!-- Main headline -->
+  <text x="100" y="340" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#faf8f3" letter-spacing="-1">Camden</text>
+  <text x="100" y="430" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#d4a017" letter-spacing="-1">Barbers</text>
+  <!-- Sub text -->
+  <text x="100" y="490" font-family="Arial, sans-serif" font-size="22" fill="#f0ece0" opacity="0.55">Sharp Cuts. Clean Finishes. Camden's Go-To Barbers.</text>
+  <!-- Address -->
+  <text x="100" y="560" font-family="Arial, sans-serif" font-size="18" fill="#d4a017" opacity="0.8">22 Camden Rd, London NW1 9DP</text>
+  <!-- Right decoration -->
+  <rect x="1060" y="30" width="2" height="570" fill="#d4a017" opacity="0.2"/>
+  <text x="1080" y="330" font-family="Arial, sans-serif" font-size="14" fill="#d4a017" opacity="0.5" transform="rotate(-90, 1080, 330)">CAMDENBARBERS.CO.UK</text>
+</svg>
