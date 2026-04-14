@@ -17,6 +17,32 @@ html {
   .pause-on-hover:hover {
     animation-play-state: paused;
   }
+
+  /* Grain / noise texture overlay — uses ::before to leave ::after free */
+  .noise-overlay {
+    position: relative;
+  }
+  .noise-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.3;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+    background-size: 250px 250px;
+  }
+
+  /* Diagonal stripe pattern (barber pole reference) */
+  .barber-stripe {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      rgba(212, 160, 23, 0.06) 10px,
+      rgba(212, 160, 23, 0.06) 20px
+    );
+  }
 }
 
 @layer base {
@@ -28,4 +54,29 @@ html {
   body {
     @apply bg-navy-900 text-cream-50 font-sans antialiased;
   }
+}
+
+/* Scissors float animation */
+@keyframes scissors-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-18px) rotate(-8deg);
+  }
+}
+
+.scissors-float {
+  animation: scissors-float 7s ease-in-out infinite;
+  transform-origin: center;
+}
+
+
+/* Shimmer on gold blade edge */
+@keyframes blade-shimmer {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.5; }
+}
+.blade-shimmer {
+  animation: blade-shimmer 3s ease-in-out infinite;
 }
