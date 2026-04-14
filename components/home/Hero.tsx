@@ -169,7 +169,7 @@ export default function Hero() {
           className="absolute inset-0 opacity-[0.025]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(212,160,23,1) 1px, transparent 1px), linear-gradient(90deg, rgba(212,160,23,1) 1px, transparent 1px)",
+              "linear-gradient(rgba(34,197,94,1) 1px, transparent 1px), linear-gradient(90deg, rgba(34,197,94,1) 1px, transparent 1px)",
             backgroundSize: "56px 56px",
           }}
         />
@@ -329,8 +329,8 @@ export default function Hero() {
               className="h-8 rounded-sm overflow-hidden"
               style={{
                 backgroundImage:
-                  "repeating-linear-gradient(-45deg, transparent, transparent 7px, rgba(212,160,23,0.07) 7px, rgba(212,160,23,0.07) 14px)",
-                border: "1px solid rgba(212,160,23,0.12)",
+                  "repeating-linear-gradient(-45deg, transparent, transparent 7px, rgba(34,197,94,0.07) 7px, rgba(34,197,94,0.07) 14px)",
+                border: "1px solid rgba(34,197,94,0.12)",
               }}
             />
           </div>
@@ -340,7 +340,7 @@ export default function Hero() {
       {/* Diagonal SVG cut at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-16 pointer-events-none z-20" aria-hidden="true">
         <svg viewBox="0 0 100 16" preserveAspectRatio="none" className="w-full h-full">
-          <polygon points="0,16 100,3 100,16" fill="#0d1224" />
+          <polygon points="0,16 100,3 100,16" fill="#ffffff" />
         </svg>
       </div>
     </section>

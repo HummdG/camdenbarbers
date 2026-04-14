@@ -20,15 +20,15 @@ function StarRating({ rating }: { rating: number }) {
 
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
-    <div className="flex-shrink-0 w-72 bg-navy-800 border border-navy-600/50 rounded-sm p-5 mx-3 shadow-card">
+    <div className="flex-shrink-0 w-72 bg-white border border-gray-100 rounded-sm p-5 mx-3 shadow-card-light">
       <StarRating rating={testimonial.rating} />
-      <p className="mt-3 text-sm text-cream-100/70 font-sans leading-relaxed line-clamp-4">
+      <p className="mt-3 text-sm text-navy-700/70 font-sans leading-relaxed line-clamp-4">
         &ldquo;{testimonial.text}&rdquo;
       </p>
-      <p className="mt-3 text-xs font-sans font-semibold text-cream-50">
+      <p className="mt-3 text-xs font-sans font-semibold text-navy-900">
         {testimonial.reviewer}
       </p>
-      <p className="text-xs text-cream-100/40 font-sans">Google Review</p>
+      <p className="text-xs text-navy-500/55 font-sans">Google Review</p>
     </div>
   );
 }
@@ -39,7 +39,7 @@ const row2 = TESTIMONIALS.slice(Math.ceil(TESTIMONIALS.length / 2));
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 bg-navy-900 overflow-hidden">
+    <section id="testimonials" className="py-24 bg-white overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 mb-14">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px w-8 bg-gold-500" />
@@ -48,7 +48,7 @@ export default function Testimonials() {
           </span>
         </div>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-cream-50 leading-tight">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy-900 leading-tight">
             Don&apos;t Take Our Word For It
           </h2>
           <div className="flex items-center gap-2">
@@ -64,7 +64,7 @@ export default function Testimonials() {
                 </svg>
               ))}
             </div>
-            <span className="text-sm text-cream-100/60 font-sans">
+            <span className="text-sm text-navy-600/65 font-sans">
               Based on Google Reviews
             </span>
           </div>
@@ -74,9 +74,9 @@ export default function Testimonials() {
       {/* Row 1 — scrolls left */}
       <div className="relative mb-4">
         {/* Left fade */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-navy-900 to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
         {/* Right fade */}
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-navy-900 to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
         <div className="flex animate-marquee pause-on-hover">
           {/* Duplicate for seamless loop */}
@@ -89,9 +89,9 @@ export default function Testimonials() {
       {/* Row 2 — scrolls right */}
       <div className="relative">
         {/* Left fade */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-navy-900 to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
         {/* Right fade */}
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-navy-900 to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
         <div className="flex animate-marquee-reverse pause-on-hover">
           {[...row2, ...row2].map((t, i) => (

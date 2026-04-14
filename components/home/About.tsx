@@ -97,7 +97,7 @@ function Comb() {
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-navy-800">
+    <section id="about" className="py-24 bg-cream-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20 items-center">
 
@@ -109,10 +109,10 @@ export default function About() {
                 About Us
               </span>
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-cream-50 leading-tight mb-6">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy-900 leading-tight mb-6">
               Craftsmanship You Can Count On
             </h2>
-            <div className="space-y-4 text-cream-100/65 font-sans text-base leading-relaxed">
+            <div className="space-y-4 text-navy-700/70 font-sans text-base leading-relaxed">
               <p>
                 Camden Barbers has been a fixture on Camden Road for over a
                 decade. We&apos;ve built our reputation one cut at a time —
@@ -139,10 +139,10 @@ export default function About() {
                   key={label}
                   className="border-t-2 border-gold-500/40 pt-4"
                 >
-                  <div className="font-serif text-2xl font-bold text-gold-400 mb-0.5">
+                  <div className="font-serif text-2xl font-bold text-gold-600 mb-0.5">
                     {value}
                   </div>
-                  <div className="text-xs font-sans text-cream-100/45 uppercase tracking-wide leading-tight">
+                  <div className="text-xs font-sans text-navy-600/60 uppercase tracking-wide leading-tight">
                     {label}
                   </div>
                 </div>
@@ -154,7 +154,7 @@ export default function About() {
           <div className="relative">
 
             {/* Main panel */}
-            <div className="relative bg-navy-950 border border-navy-600/40 rounded-sm overflow-hidden noise-overlay">
+            <div className="relative bg-white border border-gray-200 rounded-sm overflow-hidden noise-overlay shadow-card-light">
 
               {/* Diagonal stripe background */}
               <div className="absolute inset-0 barber-stripe opacity-100" aria-hidden="true" />
@@ -175,14 +175,14 @@ export default function About() {
 
                 {/* Scissors — main feature */}
                 <div className="flex items-center gap-6">
-                  <div className="w-16 text-gold-500/60 flex-shrink-0">
+                  <div className="w-16 text-gold-500/70 flex-shrink-0">
                     <ScissorsSmall />
                   </div>
                   <div>
-                    <p className="text-sm font-sans font-semibold text-cream-50 mb-0.5">
+                    <p className="text-sm font-sans font-semibold text-navy-900 mb-0.5">
                       Barber Scissors
                     </p>
-                    <p className="text-xs font-sans text-cream-100/40 leading-relaxed">
+                    <p className="text-xs font-sans text-navy-600/60 leading-relaxed">
                       Precision-sharpened, balanced for hours of cutting.
                       The tool every good barber swears by.
                     </p>
@@ -190,36 +190,36 @@ export default function About() {
                 </div>
 
                 {/* Divider */}
-                <div className="h-px bg-navy-600/50" />
+                <div className="h-px bg-gray-100" />
 
                 {/* Straight razor */}
                 <div className="flex flex-col gap-2">
-                  <div className="w-full text-gold-500/50">
+                  <div className="w-full text-gold-500/60">
                     <StraightRazor />
                   </div>
                   <div>
-                    <p className="text-sm font-sans font-semibold text-cream-50 mb-0.5">
+                    <p className="text-sm font-sans font-semibold text-navy-900 mb-0.5">
                       Straight Razor
                     </p>
-                    <p className="text-xs font-sans text-cream-100/40 leading-relaxed">
+                    <p className="text-xs font-sans text-navy-600/60 leading-relaxed">
                       For the cleanest line-up and the smoothest hot towel shave you&apos;ll ever have.
                     </p>
                   </div>
                 </div>
 
                 {/* Divider */}
-                <div className="h-px bg-navy-600/50" />
+                <div className="h-px bg-gray-100" />
 
                 {/* Comb */}
                 <div className="flex flex-col gap-2">
-                  <div className="w-full text-gold-500/45">
+                  <div className="w-full text-gold-500/55">
                     <Comb />
                   </div>
                   <div>
-                    <p className="text-sm font-sans font-semibold text-cream-50 mb-0.5">
+                    <p className="text-sm font-sans font-semibold text-navy-900 mb-0.5">
                       Barber Comb
                     </p>
-                    <p className="text-xs font-sans text-cream-100/40 leading-relaxed">
+                    <p className="text-xs font-sans text-navy-600/60 leading-relaxed">
                       Every cut starts with structure. The comb sets the guide — the blade does the rest.
                     </p>
                   </div>
@@ -232,7 +232,7 @@ export default function About() {
 
             {/* Pull-quote — sits below the panel */}
             <div className="relative mt-5 pl-5 border-l-2 border-gold-500/40">
-              <p className="font-serif text-base text-cream-50/80 leading-relaxed italic">
+              <p className="font-serif text-base text-navy-800/80 leading-relaxed italic">
                 &ldquo;We don&apos;t rush. We don&apos;t cut corners. Every
                 client gets the same care and attention — whether it&apos;s
                 your first visit or your five hundredth.&rdquo;

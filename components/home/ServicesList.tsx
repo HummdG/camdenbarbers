@@ -11,9 +11,9 @@ function ServiceCard({ service }: { service: Service }) {
   };
 
   return (
-    <div className="group flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 p-6 bg-navy-800 border border-navy-600/50 rounded-sm hover:border-gold-500/40 hover:bg-navy-700/60 transition-all duration-200 shadow-card">
+    <div className="group flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 p-6 bg-white border border-gray-100 rounded-sm hover:border-gold-500/40 hover:bg-green-50/30 transition-all duration-200 shadow-card-light">
       {/* Icon */}
-      <div className="flex-shrink-0 w-10 h-10 rounded-sm bg-navy-700 border border-navy-600/60 flex items-center justify-center group-hover:border-gold-500/40 transition-colors">
+      <div className="flex-shrink-0 w-10 h-10 rounded-sm bg-green-50 border border-green-100 flex items-center justify-center group-hover:border-gold-500/40 transition-colors">
         <svg
           className="w-5 h-5 text-gold-500"
           fill="none"
@@ -53,19 +53,19 @@ function ServiceCard({ service }: { service: Service }) {
       {/* Content */}
       <div className="flex-1 min-w-0">
         <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
-          <h3 className="font-sans font-semibold text-cream-50 text-base leading-tight">
+          <h3 className="font-sans font-semibold text-navy-900 text-base leading-tight">
             {service.name}
           </h3>
           <div className="flex items-center gap-3 flex-shrink-0">
-            <span className="text-xs text-cream-100/50 font-sans bg-navy-700 px-2.5 py-1 rounded-sm border border-navy-600/50">
+            <span className="text-xs text-navy-600/65 font-sans bg-gray-50 px-2.5 py-1 rounded-sm border border-gray-200">
               {service.durationDisplay}
             </span>
-            <span className="text-lg font-sans font-semibold text-gold-400">
+            <span className="text-lg font-sans font-semibold text-gold-600">
               {service.priceDisplay}
             </span>
           </div>
         </div>
-        <p className="text-sm text-cream-100/55 font-sans leading-relaxed mb-4">
+        <p className="text-sm text-navy-700/65 font-sans leading-relaxed mb-4">
           {service.description}
         </p>
         <Link
@@ -94,7 +94,7 @@ function ServiceCard({ service }: { service: Service }) {
 
 export default function ServicesList() {
   return (
-    <section id="services" className="py-24 bg-navy-900">
+    <section id="services" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="mb-14">
@@ -105,7 +105,7 @@ export default function ServicesList() {
             </span>
           </div>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-cream-50 leading-tight">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy-900 leading-tight">
               Services &amp; Pricing
             </h2>
             <Link

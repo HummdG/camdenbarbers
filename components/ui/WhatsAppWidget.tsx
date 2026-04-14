@@ -18,7 +18,7 @@ export default function WhatsAppWidget() {
       className="group fixed bottom-6 right-6 z-50 flex items-center gap-3"
     >
       {/* Tooltip */}
-      <span className="hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-navy-800 text-cream-50 text-xs font-sans font-medium px-3 py-1.5 rounded-sm border border-navy-600/60 shadow-card whitespace-nowrap">
+      <span className="hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-navy-900 text-white text-xs font-sans font-medium px-3 py-1.5 rounded-sm shadow-md whitespace-nowrap">
         Chat on WhatsApp
       </span>
 

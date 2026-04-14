@@ -9,22 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Dark forest green — replaces navy
         navy: {
-          950: "#0a0e1a",
-          900: "#0d1224",
-          800: "#111827",
-          700: "#1a2235",
-          600: "#243049",
+          950: "#07110a",
+          900: "#0b1a10",
+          800: "#102318",
+          700: "#163322",
+          600: "#1f4530",
         },
+        // Vivid emerald green — replaces gold
         gold: {
-          300: "#f5d78e",
-          400: "#e8c060",
-          500: "#d4a017",
-          600: "#b8860b",
+          300: "#86efac",
+          400: "#4ade80",
+          500: "#22c55e",
+          600: "#16a34a",
         },
+        // Near-white with faint green tint — replaces cream
         cream: {
-          50: "#faf8f3",
-          100: "#f0ece0",
+          50: "#f0fdf4",
+          100: "#dcfce7",
         },
       },
       fontFamily: {
@@ -33,13 +36,14 @@ const config: Config = {
       },
       backgroundImage: {
         "hero-gradient":
-          "linear-gradient(135deg, #0a0e1a 0%, #111827 60%, #1a2235 100%)",
+          "linear-gradient(135deg, #07110a 0%, #102318 60%, #163322 100%)",
         "gold-gradient":
-          "linear-gradient(90deg, #d4a017 0%, #e8c060 50%, #d4a017 100%)",
+          "linear-gradient(90deg, #22c55e 0%, #4ade80 50%, #22c55e 100%)",
       },
       boxShadow: {
-        "gold-glow": "0 0 20px rgba(212, 160, 23, 0.25)",
+        "gold-glow": "0 0 20px rgba(34, 197, 94, 0.3)",
         card: "0 4px 24px rgba(0, 0, 0, 0.4)",
+        "card-light": "0 1px 12px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.04)",
       },
       animation: {
         "fade-in-up": "fadeInUp 0.5s ease-out forwards",
