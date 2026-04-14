@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     images: ["/og-image.svg"],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.svg?v=2",
   },
   keywords: [
     "barber Camden",
@@ -73,7 +73,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable}`}
     >
-      <body className="bg-navy-900 text-cream-50 font-sans antialiased">
+      <body className="bg-white text-navy-900 font-sans antialiased">
         <Navbar />
         <main>{children}</main>
         <Footer />
